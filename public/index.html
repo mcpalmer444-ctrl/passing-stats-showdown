@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#10151c" />
+  <title>Passing Stats Showdown | 2026</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Passing Stats Showdown home">
+        <span class="brand-mark">3<span>QB</span></span>
+        <span><strong>PASSING STATS</strong><small>SHOWDOWN · 2026</small></span>
+      </a>
+      <div class="topbar-right"><span class="live-dot"></span><span id="status-label">Connecting to stats</span><button id="refresh-button" class="refresh-button" title="Refresh stats"><span aria-hidden="true">↻</span> Refresh</button></div>
+    </header>
+    <main>
+      <section class="charts-section" aria-label="Passing statistics bar graphs">
+        <div class="section-heading"><div><p class="eyebrow">CATEGORY BY CATEGORY</p><h2>Own the stat sheet</h2></div><span class="section-note">Cumulative totals · Week 3 onward</span></div>
+        <div class="charts-grid">
+          <article class="stat-card" data-stat="yards"><div class="stat-card-head"><div class="stat-icon yards-icon">↗</div><div><h3>Passing yards</h3><p>Air it out.</p></div><span class="direction-badge">MOST WINS</span></div><div class="bar-chart" id="yards-chart"><div class="loading-line"></div></div><div class="stat-card-foot"><span>Highest total takes the crown</span><span class="crown">♛</span></div></article>
+          <article class="stat-card" data-stat="tds"><div class="stat-card-head"><div class="stat-icon tds-icon">✦</div><div><h3>Passing TDs</h3><p>Put points on the board.</p></div><span class="direction-badge">MOST WINS</span></div><div class="bar-chart" id="tds-chart"><div class="loading-line"></div></div><div class="stat-card-foot"><span>Highest total takes the crown</span><span class="crown">♛</span></div></article>
+          <article class="stat-card" data-stat="ints"><div class="stat-card-head"><div class="stat-icon ints-icon">!</div><div><h3>Interceptions</h3><p>Protect the football.</p></div><span class="direction-badge reverse">FEWEST WINS</span></div><div class="bar-chart" id="ints-chart"><div class="loading-line"></div></div><div class="stat-card-foot"><span>Lowest total takes the crown</span><span class="crown">♛</span></div></article>
+        </div>
+      </section>
+      <footer><p>2026 regular season · Passing stats only.</p><p>Only games from Week 3 onward count. Stats refresh automatically about every 45 seconds.</p></footer>
+    </main>
+  </div>
+  <script src="/app.js" defer></script>
+</body>
+</html>

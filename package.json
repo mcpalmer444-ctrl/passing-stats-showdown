@@ -1,0 +1,8 @@
+{
+  "name": "passing-stats-showdown",
+  "version": "1.0.0",
+  "private": true,
+  "description": "2026 NFL passing stats showdown: Jared Goff, Jordan Love, Jameis Winston, starting Week 3.",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}
